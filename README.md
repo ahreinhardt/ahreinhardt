@@ -1,29 +1,31 @@
 ## Alex Reinhardt
 
-Physics teacher who ships production software. MS Software Engineering, RIT.
+Physics teacher and software engineer. MS Software Engineering, Rochester
+Institute of Technology.
 
-I build and operate **[PhabPhysics](https://github.com/ahreinhardt/phabphysics)** — an
-AP Physics learning platform running in real classrooms at
-[phabphysics.com](https://phabphysics.com). Three courses — AP Physics 1, 2 and C —
-from one codebase: ~135k lines of TypeScript and JS on Firebase, 3,786 problem
-generators, and 24 blocking check groups. Design, implementation, physics content,
-and operations are all mine.
+I build and operate [PhabPhysics](https://github.com/ahreinhardt/phabphysics), a
+practice and lesson platform used in AP Physics classrooms. It supports AP
+Physics 1, AP Physics 2, and AP Physics C from one TypeScript/JavaScript codebase
+on Firebase.
 
-**What I'm good at**
+The current registry contains 306 course-days and 3,786 problem-generator
+registrations. Its default verification run samples 378,600 generated problems,
+followed by browser and emulator-backed tests. LLMs contribute code and
+curriculum drafts; deterministic checks, independent physics review, and human
+approval control that workflow.
 
-- **Correctness under generated content.** Problems are randomized per student and
-  authored with LLM assistance, so nothing is hand-checkable. I build the
-  deterministic gates that make that safe — property harnesses over generators,
-  physics invariant checks, snapshot baselines, browser render sweeps.
-- **Shipping into live systems.** The practice core grades real students, so it
-  doesn't get refactored mid-semester. Features ship as wrapper modules that load
-  after it — two additional courses landed with a single reviewed line changed in
-  the 2,100-line scoring core.
-- **Interactive simulation.** 13 physics engines in 2D canvas and Three.js, with
-  live telemetry and conservation-law test suites.
+### Selected work
 
-**Currently** — finishing AP Physics C Electricity & Magnetism.
+- **[PhabPhysics engineering case study](https://github.com/ahreinhardt/phabphysics)** —
+  architecture, backward-compatible course expansion, generated-content
+  verification, browser testing, and production operations.
+- **[verification-gates](https://github.com/ahreinhardt/verification-gates)** —
+  a zero-dependency JavaScript toolkit for seeded property sweeps, domain
+  invariants, and snapshot baselines.
 
-📄 **[Read the engineering case study →](https://github.com/ahreinhardt/phabphysics)**
+### Focus
+
+TypeScript and JavaScript · Firebase and Express · generated-content testing ·
+2D canvas and Three.js simulation
 
 <sub>ahreinhardt@gmail.com</sub>
